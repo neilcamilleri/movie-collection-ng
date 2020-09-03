@@ -36,6 +36,9 @@ Creating a collection of your favourite movies is quite simple with this app. Cl
 
 A dockerfile is provided, simply build with docker and run to start the project in a container.
 
+- `docker build .`
+- `docker run -p 3000:80 <container-id>`
+
 ## Development server
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.8.
