@@ -1,4 +1,4 @@
-# Movie Collection
+# Movie Collection | [Demo](https://samples.neilcamilleri.com/)
 
 Creating a collection of your favourite movies is quite simple with this app. Click the plus icon in the sidebar and search for your favourite movie. The app will query the TMDB database, you can any movie to your collection from the results list.
 
