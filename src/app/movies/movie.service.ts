@@ -46,11 +46,7 @@ export class MovieService {
     try {
       const collection = this.storage.retrieve('collection') || [];
 
-      console.log(id, collection);
-
       const updatedCollection = collection.filter((m) => m.tmdbId !== id);
-
-      console.log(updatedCollection);
 
       this.storage.store('collection', updatedCollection);
       this.toastr.success(`Movie removed`);

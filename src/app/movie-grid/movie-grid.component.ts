@@ -24,7 +24,6 @@ export class MovieGridComponent {
   }
 
   search(query: string) {
-    console.log(event);
     this.filteredMovies = this.moviesList.filter((m) =>
       m.title.toLowerCase().startsWith(query.toLowerCase())
     );
