@@ -4,9 +4,9 @@ Creating a collection of your favourite movies is quite simple with this app. Cl
 
 ## Features
 
-- Find any movie (Source is TMDB)
+- Find any movie to add to your collection (Source is TMDB)
 - Manage your growing collection. Persistent storage provided via LocalStorage.
-- View movie details
+- View movie information such as release date, synopsis and genre.
 
 ## Parts
 - [Movie Grid](https://github.com/neilcamilleri/movie-collection-ng/tree/master/src/app/movie-grid)
