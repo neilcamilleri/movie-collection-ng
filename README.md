@@ -8,6 +8,14 @@ Creating a collection of your favourite movies is quite simple with this app. Cl
 - Manage your growing collection. Persistent storage provided via LocalStorage.
 - View movie details
 
+## Parts
+- [Movie Grid](https://github.com/neilcamilleri/movie-collection-ng/tree/master/src/app/movie-grid)
+- [Movie Details](https://github.com/neilcamilleri/movie-collection-ng/tree/master/src/app/movie-details)
+- [New Movie](https://github.com/neilcamilleri/movie-collection-ng/tree/master/src/app/new-movie)
+- [Sidebar](https://github.com/neilcamilleri/movie-collection-ng/tree/master/src/app/sidebar)
+- [Movies Service](https://github.com/neilcamilleri/movie-collection-ng/tree/master/src/app/movies)
+
+
 ## Technologies Used
 
 - [Angular](https://angular.io/)
