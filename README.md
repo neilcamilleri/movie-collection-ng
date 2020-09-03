@@ -8,6 +8,14 @@ Creating a collection of your favourite movies is quite simple with this app. Cl
 - Manage your growing collection. Persistent storage provided via LocalStorage.
 - View movie details
 
+## Parts
+- [Movie Grid](https://github.com/neilcamilleri/movie-collection-ng/tree/master/src/app/movie-grid)
+- [Movie Details](https://github.com/neilcamilleri/movie-collection-ng/tree/master/src/app/movie-details)
+- [New Movie](https://github.com/neilcamilleri/movie-collection-ng/tree/master/src/app/new-movie)
+- [Sidebar](https://github.com/neilcamilleri/movie-collection-ng/tree/master/src/app/sidebar)
+- [Movies Service](https://github.com/neilcamilleri/movie-collection-ng/tree/master/src/app/movies)
+
+
 ## Technologies Used
 
 - [Angular](https://angular.io/)
@@ -15,6 +23,12 @@ Creating a collection of your favourite movies is quite simple with this app. Cl
 - [Rxjs](https://github.com/ReactiveX/rxjs)
 - [Sass](http://sass-lang.com/) (Scss)
 - [NGRX](https://ngrx.io/)
+
+## Data Source
+<a href="https://www.themoviedb.org">
+<img src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_short-8e7b30f73a4020692ccca9c88bafe5dcb6f8a62a4c6bc55cd9ba82bb2cd95f6c.svg" height="24">
+</a>
+
 
 # Development Notes
 
