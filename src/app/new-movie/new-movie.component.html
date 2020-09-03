@@ -1,0 +1,31 @@
+<div class="new-movie-page">
+  <h1>New Movie</h1>
+
+  <input
+    #box
+    type="text"
+    id="new-movie-bar"
+    placeholder="movie name"
+    (keyup.enter)="search(box.value)"
+  />
+
+  <div class="results-list">
+    <div *ngIf="moviesFound$ | async as result">
+      <div class="movie-card" *ngFor="let movie of result.searchResults">
+        <img
+          [src]="'https://image.tmdb.org/t/p/w200' + movie.poster_path"
+          [alt]="'Poster for ' + movie.title"
+          loading="lazy"
+        />
+        <div class="details">
+          <div class="title">{{ movie.title }}</div>
+          <div class="year">{{ movie.release_date }}</div>
+          <div class="overview">{{ movie.overview }}</div>
+          <button class="btn-add" (click)="addMovie(movie)">
+            Add to Collection
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

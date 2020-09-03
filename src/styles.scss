@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+@import "assets/reset.scss";
+@import "assets/normalize.css";
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+
+// regular style toast
+@import "~ngx-toastr/toastr";
+
+html {
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  background-color: #12181b;
+  font-size: 16px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2rem;
+}

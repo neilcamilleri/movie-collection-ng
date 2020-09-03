@@ -1,0 +1,31 @@
+<div class="movies-page">
+  <div class="top-bar">
+    <div class="search">
+      <input
+        #box
+        type="text"
+        class="search-box"
+        placeholder="search"
+        (keydown.enter)="search(box.value)"
+      />
+
+      <a href="#" (click)="resetSearch()" class="btn btn-clear">Reset List</a>
+    </div>
+
+    <div class="filter"></div>
+  </div>
+
+  <div class="movie-grid">
+    <div *ngFor="let movie of filteredMovies">
+      <div class="movie-card" (click)="showMovie(movie.tmdbId)">
+        <div class="card-face front">
+          <img
+            [src]="'https://image.tmdb.org/t/p/w300' + movie.posterPath"
+            [alt]="movie.title + ' Poster'"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

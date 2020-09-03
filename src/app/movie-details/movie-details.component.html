@@ -1,0 +1,32 @@
+<div *ngIf="movieDetails$ | async as details" class="movie-details-page">
+  <div class="poster">
+    <img
+      [src]="'https://image.tmdb.org/t/p/w500' + details.poster_path"
+      alt=""
+    />
+    <h1 class="tagline">{{ details.tagline }}</h1>
+  </div>
+
+  <div class="details">
+    <h1 class="title">{{ details.title }}</h1>
+    <span>{{ details.release_date }}</span>
+
+    <div class="overview">
+      {{ details.overview }}
+    </div>
+
+    <div class="genres">
+      <ul>
+        <li *ngFor="let genre of details.genres">
+          {{ genre.name }}
+        </li>
+      </ul>
+    </div>
+
+    <div class="toolbar">
+      <button class="btn btn-remove" (click)="removeFromCollection(details.id)">
+        Remove from Collection
+      </button>
+    </div>
+  </div>
+</div>
