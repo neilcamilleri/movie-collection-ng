@@ -16,6 +16,9 @@
   </div>
 
   <div class="movie-grid">
+    <div *ngIf="filteredMovies.length === 0" class="empty-collection">
+       <a routerLink="/new" >Find a movie to add to your collection</a>
+    </div>
     <div *ngFor="let movie of filteredMovies">
       <div class="movie-card" (click)="showMovie(movie.tmdbId)">
         <div class="card-face front">

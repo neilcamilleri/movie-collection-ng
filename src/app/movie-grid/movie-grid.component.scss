@@ -44,6 +44,19 @@
     grid-template-columns: repeat(auto-fit, minmax(250px, 500px));
     justify-content: space-evenly;
 
+    .empty-collection {
+      display: flex;
+      text-align: center;
+      margin: auto;
+      font-size: 3rem;
+
+      &:hover {
+        a {
+          color: #ffcb2b;
+        }
+      }
+    }
+
     .movie-card {
       min-height: 550px;
       width: 400px;
